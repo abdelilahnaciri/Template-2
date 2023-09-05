@@ -843,7 +843,7 @@ header nav .form i {
 }
 
 .our-skills .skills .prog-holder {
-    margin-bottom: 15px;
+    margin-bottom: 40px;
 }
 
 .our-skills .skills .prog-holder h4 {
@@ -878,6 +878,7 @@ header nav .form i {
     color: #fff;
     padding: 2px 4px;
     text-align: center;
+    /* width: 40px; */
 }
 
 .our-skills .skills .prog-holder .prog span::after {
@@ -891,3 +892,411 @@ header nav .form i {
 }
 
 /* End Skills */
+/* Start Quote */
+.quote {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    background-image: url(../images/quote.jpg);
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.quote::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 50%);
+}
+
+.quote .container {
+    position: relative;
+}
+
+.quote .container q {
+    display: block;
+    font-size: 30px;
+    margin-bottom: 20px;
+    line-height: 1.8;
+    text-transform: uppercase;
+}
+
+.quote q::before {
+    font-family: 'Font awesome 6 free';
+    content: '\f10d';
+    margin-right: 10px;
+}
+
+.quote q::after {
+    font-family: 'Font awesome 6 free';
+    content: '\f10e';
+    margin-left: 10px;
+}
+
+.quote q::before,
+.quote q::after {
+    font-weight: 900;
+    font-size: 30px;
+    position: relative;
+    bottom: 20px;
+    color: var(--main-color);
+}
+
+/* End Quote */
+/* Start Pricing */
+.pricing {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+
+.pricing .container .plans {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.pricing .plans .plan {
+    background-color: #fcfcfc;
+    text-align: center;
+}
+
+.pricing .plans .plan .head {
+    padding: 40px 20px;
+    border-top: 1px solid var(--main-color);
+    border-bottom: 1px solid var(--main-color);
+}
+
+.pricing .plans .plan .head h3 {
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.pricing .plans .plan .head .price {
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.pricing .plans .plan .head .price::before {
+    content: "$";
+    position: relative;
+    font-size: 18px;
+    margin-right: 10px;
+    top: -25px;
+}
+
+.pricing .plans .plan .head .price::after {
+    content: "/MO";
+    position: relative;
+    font-weight: normal;
+    font-size: 14px;
+    right: -5px;
+}
+
+.pricing .plans .plan ul {
+    border-bottom: 1px solid var(--main-color);
+}
+
+.pricing .plans .plan ul li {
+    padding: 20px;
+    position: relative;
+}
+
+.pricing .plans .plan ul li:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 1px;
+    background-color: var(--main-color);
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.pricing .plans .plan .foot a {
+    display: block;
+    margin: 30px auto;
+    padding: 10px 20px;
+    text-decoration: none;
+    width: fit-content;
+    border: 1px solid var(--main-color);
+    color: #000;
+}
+
+.pricing .container .contact-text {
+    text-align: center;
+    margin: 50px auto 25px;
+    font-size: 18px;
+}
+
+.pricing .container .contact-link {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+    background-color: var(--main-color);
+    padding: 13px 30px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: .5px;
+}
+
+/* End Pricing */
+/* Start Subscribe */
+.subscribe {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    background-image: url(../images/design-2.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    position: relative;
+}
+
+.subscribe::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 60%);
+}
+
+.subscribe .container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 991px) {
+    .subscribe .container {
+        flex-direction: column;
+    }
+}
+
+.subscribe .container form {
+    display: flex;
+    width: 650px;
+    max-width: 100%;
+    position: relative;
+}
+
+.subscribe form i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+}
+
+.subscribe form input[type="email"] {
+    width: calc(100% - 130px);
+    background: none;
+    border: 1px solid #fff;
+    border-right: none;
+    padding: 10px 10px 10px 50px;
+    caret-color: var(--main-color);
+    color: #fff;
+}
+
+.subscribe form input[type="email"]::placeholder {
+    padding-left: 1px;
+    color: #fff;
+}
+
+.subscribe form input[type="submit"] {
+    width: 130px;
+    padding: 10px;
+    background-color: var(--main-color);
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 1px solid #fff;
+    border-left: none;
+    cursor: pointer;
+}
+
+.subscribe form input[type="email"]:focus,
+.subscribe form input[type="submit"]:focus {
+    outline: none;
+}
+
+.subscribe p {
+    line-height: 2;
+    margin-left: 50px;
+}
+
+@media (max-width: 997px) {
+    .subscribe p {
+        margin: 25px auto 0;
+    }
+}
+
+/* End Subscribe */
+/* Start Contact */
+.contact {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+
+.contact .content {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+    .contact .content {
+        flex-direction: column;
+    }
+}
+
+.contact .content form {
+    flex-basis: 70%;
+}
+
+.contact form .main-input {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    caret-color: var(--main-color);
+}
+
+.contact form .main-input::placeholder {
+    color: #000;
+    font-size: 15px;
+    padding-left: 2px;
+}
+
+.contact form .main-input:focus {
+    outline: none;
+}
+
+.contact form textarea.main-input {
+    height: 200px;
+}
+
+.contact form input[type="submit"] {
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    margin-left: auto;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+}
+
+.contact .info {
+    flex-basis: 25%;
+}
+
+@media (max-width: 767px) {
+    .contact .info {
+        order: -1;
+        text-align: center;
+    }
+}
+
+.contact .info h4 {
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+@media (max-width: 767px) {
+    .contact .info h4 {
+        margin-bottom: 20px;
+    }
+}
+
+.contact .info .phone {
+    display: block;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.contact .info h4:nth-of-type(2) {
+    margin-top: 65px;
+}
+
+@media (max-width: 767px) {
+    .contact .info h4:nth-of-type(2) {
+        margin-top: 35px;
+        margin-bottom: 20px;
+    }
+}
+
+.contact .info address {
+    line-height: 1.8;
+    color: #777;
+}
+
+@media (max-width: 767px) {
+    .contact .info address {
+        margin-bottom: 20px;
+    }
+}
+
+/* End Contact */
+/* Start Footer */
+.footer {
+    padding-top: calc(var(--section-padding) / 4);
+    padding-bottom: calc(var(--section-padding) / 4);
+    background-image: url(../images/footer.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: #fff;
+    text-align: center;
+}
+
+.footer::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 50%);
+}
+
+.footer .container {
+    position: relative;
+}
+
+.footer img {
+    height: 50px;
+}
+
+.footer p:not(.copyright) {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 22px;
+    padding: 15px;
+    border-bottom: 1px solid #fff;
+    width: fit-content;
+    margin: 0 auto 15px;
+}
+
+.footer .social-icons i {
+    padding: 0 10px;
+    font-size: 20px;
+}
+
+.footer .copyright {
+    margin-top: 50px;
+}
+
+.footer .copyright span {
+    color: var(--main-color);
+}
+
+/* End Footer */
