@@ -281,6 +281,8 @@ header nav .form i {
     .landing .text {
         width: 100%;
         max-width: 100%;
+        max-height: 400px;
+        padding: 10px;
     }
 
     .landing .text .content h2 {
